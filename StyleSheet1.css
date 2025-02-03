@@ -1,0 +1,151 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1; /* Light gray background */
+    color: #2C3E50; /* Deep blue text */
+    line-height: 1.8; /* More space between lines for better readability */
+    padding: 20px;
+    text-align: center; /* Centers all content globally */
+}
+
+/* Navigation Buttons */
+nav {
+    margin-bottom: 30px;
+}
+
+    nav a {
+        text-decoration: underline;
+        color: #fff0f0;
+        padding: 1px 2px;
+        margin: 4px;
+        border-radius: 1px;
+        font:200;
+        font-size: 1.5rem;
+        transition: background-color 0.3s ease;
+    }
+
+        nav a:hover {
+            background-color: #16a085; /* Darker green for hover effect */
+        }
+
+/* About Section */
+/* About Section Photo */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Spacing between photo and text */
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the photo round */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    border: 4px solid #1ABC9C; /* Optional: Adds a green border around the photo */
+}
+
+.about-text {
+    text-align: left;
+    max-width: 600px;
+}
+#about {
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left; /* Align text to the left */
+}
+
+    #about h2 {
+        color: #2C3E50; /* Deep blue heading */
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        color: #34495E; /* Slightly darker gray for readability */
+        font-size: 1.2rem;
+        font:italic;
+        line-height: 1.8; /* Ensures better readability */
+        margin-bottom: 20px;
+    }
+
+strong {
+    color: #338ab4; /* Bright green for emphasis */
+}
+
+/* Hero Section */
+header {
+    background-color: #7c8ebc; /* Deep blue background */
+    color: #fffef5; /* White text */
+    padding: 20px 20px; /* Reduced padding for compact look */
+    text-align: center; /* Centers the text */
+    height: 45vh; /* Height set to 25% of viewport height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center the content */
+
+}
+
+    header h1 {
+        
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+/* Footer Section */
+footer {
+    background-color: #7c8ebc; /* Deep blue background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center; /* Centers the footer content */
+    margin-top: 40px;
+}
+
+    footer a {
+        color: #1ABC9C; /* Accent color for links */
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Separate Section Borders */
+section {
+    margin-bottom: 40px;
+}
+
+    section:not(#about) {
+        padding: 40px;
+        background-color: #ffffff; /* White background for sections */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project {
+        width: 95%;
+    }
+}
